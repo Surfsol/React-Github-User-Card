@@ -6,12 +6,12 @@ import {
 
 const Cards = (props) => {
     console.log(props)
-    console.log(props.avatar) //image not appearing
+    console.log(`Cards avatar`,props.avatar) //image not appearing
   return (
     <div>
       <Card>
         <CardBody>
-        <CardImg top width="100%" src={props.avater} alt="Card image cap" />
+        <CardImg top width="100%" src={props.avatar} alt="Card image cap" />
         <CardSubtitle>{props.name}</CardSubtitle>
         <CardSubtitle>{props.login}</CardSubtitle>
         </CardBody>

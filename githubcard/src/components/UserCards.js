@@ -3,7 +3,7 @@ import Cards from './Cards'
 
 //deconstruting, grab props from
 const UserCards = props => {
-    console.log(props.users)
+    console.log(`UserCards props`,props.users)
     const{id, avatar_url, name, login, location, type, url, followers, following, bio}=props.users
     return (
       <div>          

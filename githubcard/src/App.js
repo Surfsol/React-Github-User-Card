@@ -16,6 +16,7 @@ class GCard extends React.Component{
     axios
     .get("https://api.github.com/users/Surfsol")
     .then(response => {
+      console.log(`componentdidm`,response.data)
         this.setState({
           users: response.data
         }) 
@@ -28,11 +29,12 @@ class GCard extends React.Component{
       newProfile: e.target.value
     })
   }
-
+/*
   changeProfile = e =>{
     e.prevent.Default();
     axios.get("https://api.github.com/users/${this.state.newProfile}")
     .then(response => {
+      console.log(`changeprofile`,response.data)
       this.setState({
         users: response.data
       })
@@ -40,7 +42,7 @@ class GCard extends React.Component{
   .catch(err => console.log(err))
   
   }
-
+*/
   render() {
     return(
       <div>

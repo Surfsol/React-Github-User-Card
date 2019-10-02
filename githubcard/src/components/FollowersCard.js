@@ -5,7 +5,7 @@ import {
 } from 'reactstrap';
 
 const FollowersCard = (props) => {
-    console.log(props)
+    console.log(`followersCard`,props)
   return (
     <div>
       <Card>
